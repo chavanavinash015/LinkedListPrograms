@@ -24,7 +24,15 @@ public class LinkedList <T> {
             tail = newMyNode;
         }
     }
-
+    public T pop() {
+        if (head == null)
+            return null;
+        else {
+            T data = head.getKey();
+            head = (Node<T>) head.getNext();
+            return data;
+        }
+    }
     public void print(){
         if (head == null){
             System.out.println("Linked List is Empty");
