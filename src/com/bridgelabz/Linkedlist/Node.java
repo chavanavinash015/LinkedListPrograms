@@ -1,6 +1,7 @@
 package com.bridgelabz.Linkedlist;
 
 public class Node<T> {
+    private T Key;
 
     private T data;
     private Node<T> next;
@@ -23,5 +24,13 @@ public class Node<T> {
 
     public void setNext(Node<T> next) {
         this.next = next;
+    }
+
+    public T getKey() {
+        return Key;
+    }
+
+    public void setKey(T key) {
+        Key = key;
     }
 }
