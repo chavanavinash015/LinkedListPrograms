@@ -25,7 +25,6 @@ public class LinkedList <T> {
         }
     }
 
-
     public void print(){
         if (head == null){
             System.out.println("Linked List is Empty");
