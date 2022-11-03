@@ -13,6 +13,7 @@ public class LinkedListMain {
         list1.add(56);
         list1.push(30);
         list1.pop();
+        list1.popLast();
         list1.print();
 
         System.out.println("\nLinkedList in appending  56<-30<-70");
@@ -21,6 +22,7 @@ public class LinkedListMain {
         list2.push(30);
         list2.push(70);
         list2.pop();
+        list2.popLast();
         list2.print();
 
     }
