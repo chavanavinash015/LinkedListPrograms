@@ -4,9 +4,9 @@ public class Node<T> {
 
     private T data;
     private Node<T> next;
-    public Node(T data) {//get data
-        this.data = data;//assign data
-        this.next = null;// next, by-default// null
+    public Node(T data) {
+        this.data = data;
+        this.next = null;
     }
 
     public T getData() {
