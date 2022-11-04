@@ -1,5 +1,7 @@
 package com.bridgelabz.Linkedlist;
 
+import java.util.ArrayList;
+
 public class LinkedListMain {
 
     public static void main(String[] args) {
@@ -14,6 +16,7 @@ public class LinkedListMain {
         list1.push(30);
         list1.pop();
         list1.popLast();
+        list1.search(30);
         list1.print();
 
         System.out.println("\nLinkedList in appending  56<-30<-70");
@@ -23,7 +26,9 @@ public class LinkedListMain {
         list2.push(70);
         list2.pop();
         list2.popLast();
+        list2.search(30);
         list2.print();
+
 
     }
 }

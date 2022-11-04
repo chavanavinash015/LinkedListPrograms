@@ -5,7 +5,7 @@ public class LinkedList <T> {
     public Node<T> head;
     public Node<T> tail;
     public void add(T data){
-        Node newNode = new Node(data);
+        Node<T> newNode = new Node<>(data);
         if (head == null){
             head = newNode;
             tail = newNode;
@@ -24,18 +24,17 @@ public class LinkedList <T> {
             tail = newMyNode;
         }
     }
-    public T pop() {
-        if (head == null)
-            return null;
+    public void pop() {
+        if (head == null) {
+        }
         else {
             T data = head.getKey();
             head = (Node<T>) head.getNext();
-            return data;
         }
     }
-    public T popLast() {
-        if (head == null)
-            return null;
+    public void popLast() {
+        if (head == null) {
+        }
         else {
             Node<T> temp = head;
             while (temp.getNext() != tail) {
@@ -44,10 +43,18 @@ public class LinkedList <T> {
             T data = tail.getKey();
             temp.setNext(null);
             tail = temp;
-            return data;
+        }
+   }
+    public void search(T searchData) {
+        Node<T> temp = new Node<>(searchData);
+        Node<T> newtemp = head;
+        while (newtemp != null) {
+            if (newtemp.getKey() == searchData) {
+                System.out.println("Elements available");
+            }
+            newtemp = newtemp.getNext();
         }
     }
-
     public void print(){
         if (head == null){
             System.out.println("Linked List is Empty");
